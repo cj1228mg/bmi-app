@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+
+{% block tab_title %} {{ tab_title }} {% endblock %}
+
+{% block contents %}
+<div class="container" style="margin-top: 5%;">
+    <div class="row">
+        <div class="col shadow">
+            <h5>BMIとは</h5>
+            <p class="about-bmi">
+                BMI（Body Mass Index）はボディマス指数と呼ばれ、体重と身長から算出される肥満度を表す体格指数です。<br>
+                子供には別の指数が存在しますが、成人ではBMIが国際的な指標として用いられています。<br>
+                健康を維持するためは日頃からBMIを把握することが重要です。
+            </p>
+            <h5>計算式</h5>
+            <ul>
+                <li>BMI = 体重kg ÷ (身長m)<sup>2</sup></li>
+                <li>適正体重 = (身長m)<sup>2</sup> × 22</li>
+            </ul>
+            <p>参考サイト：<cite><a href="https://keisan.casio.jp/exec/system/1161228732">BMIと適正体重</a></cite></p>
+        </div>
+    </div>
+</div>
+{% endblock %}
